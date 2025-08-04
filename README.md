@@ -24,7 +24,7 @@ The steps taken reflect the real world challenges faced in data cleaning and lay
 
 # **Step-by-Step Explanation**
 
-### Step 1: Importing and Exploring the Dataset
+### **Step 1: Importing and Exploring the Dataset**
 The dataset was loaded using the `pandas` library. This step involves reading the CSV file into a DataFrame, which provides a structured, tabular form of the data that can be easily analyzed and manipulated.
 ```
 import pandas as pd
@@ -32,3 +32,24 @@ df = pd.read_csv("Titanic-Dataset.csv")
 ```
 
 Initial exploration helps you understand the structure, data types, and missing values in the dataset. Methods like `.info()`, `.describe()`, and `.isnull().sum()` are used to summarize data characteristics.
+
+
+### **Step 2: Handling missing values using Mean/Median/Imputation** 
+Missing data can lead to incorrect analysis. In this step, missing values are handled using appropriate techniques:
+- Numerical columns are filled with median
+- Categorical columns are filled with mode
+- Irrelevant or highly incomplete columns like `Cabin` can be dropped
+
+
+### **Step 3: Convert categorical features into numerical using encoding**
+Machine learning models work with numbers and not text. This step converts categorical features into numerical format:
+- **Label** Encoding for binary columns, For example `Sex`
+- **One Hot** Encoding for multi - class columns, For example `Embarked`
+
+
+### **Step 4: Normalize / Standardize the numerical features**
+Feature scaling ensures that all numerical values are on a similar scale. This avoids giving higher-weighted importance to features just because they have larger ranges. In this project, `StandardScaler` was used to standardize columns like `Age`, `Fare`, `SibSp`, and `Parch`.
+
+
+### **Step 5: Visualize outliers using boxplots and remove them**
+Visualizations provide insights into how certain features relate to survival. Using libraries like `Seaborn` and `Matplotlib`, various plots were created to analyze survival patterns by gender, passenger class, age, and fare.
