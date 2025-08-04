@@ -53,3 +53,9 @@ Feature scaling ensures that all numerical values are on a similar scale. This a
 
 ### **Step 5: Visualize outliers using boxplots and remove them**
 Visualizations provide insights into how certain features relate to survival. Using libraries like `Seaborn` and `Matplotlib`, various plots were created to analyze survival patterns by gender, passenger class, age, and fare.
+
+
+
+
+# Made By
+# Mansi Gupta
