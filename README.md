@@ -57,5 +57,4 @@ Visualizations provide insights into how certain features relate to survival. Us
 
 
 
-# Made By
-# Mansi Gupta
+# Made By: Mansi Gupta
