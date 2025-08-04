@@ -26,3 +26,9 @@ The steps taken reflect the real world challenges faced in data cleaning and lay
 
 #### Step 1: Importing and Exploring the Dataset
 The dataset was loaded using the `pandas` library. This step involves reading the CSV file into a DataFrame, which provides a structured, tabular form of the data that can be easily analyzed and manipulated.
+```
+import pandas as pd
+df = pd.read_csv("Titanic-Dataset.csv")
+```
+
+Initial exploration helps you understand the structure, data types, and missing values in the dataset. Methods like `.info()`, `.describe()`, and `.isnull().sum()` are used to summarize data characteristics.
