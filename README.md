@@ -24,7 +24,7 @@ The steps taken reflect the real world challenges faced in data cleaning and lay
 
 # **Step-by-Step Explanation**
 
-#### Step 1: Importing and Exploring the Dataset
+### Step 1: Importing and Exploring the Dataset
 The dataset was loaded using the `pandas` library. This step involves reading the CSV file into a DataFrame, which provides a structured, tabular form of the data that can be easily analyzed and manipulated.
 ```
 import pandas as pd
